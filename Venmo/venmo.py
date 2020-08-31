@@ -8,7 +8,7 @@ class Venmo:
         json_file = open("venmo_secrets.json")
         variables = json.load(json_file)
         json_file.close()
-        print(variables)
+        #print(variables)
         access_token = variables["access_token"]
         self.venmo = Client(access_token=access_token)
         self.friendsList = "friendsList.csv"
